@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스페인 쇼핑가</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍 스페인 쇼핑 가이드</h1>
+    <p>스페인에서 꼭 가봐야 할 쇼핑 거리와 인기 브랜드를 소개합니다.</p>
+</header>
+
+<section class="category-section">
+    <h2>추천 쇼핑 지역</h2>
+
+    <article class="category-card">
+        <h3>1. 그란 비아 (Gran Vía) – 마드리드</h3>
+        <p>
+            스페인의 대표 쇼핑 거리로 ZARA, H&M, Massimo Dutti 등 인기 브랜드 매장이 밀집해 있다.
+            고급 부티크와 백화점도 함께 있어 쇼핑하기 좋은 지역.
+        </p>
+    </article>
+
+    <article class="category-card">
+        <h3>2. 라 람블라 거리 (La Rambla) – 바르셀로나</h3>
+        <p>
+            기념품, 패션 아이템, 예술품까지 다양한 상점들이 모여 있는 관광객 인기 쇼핑 거리.
+        </p>
+    </article>
+
+    <article class="category-card">
+        <h3>3. 엘 코르테 잉글레스 (El Corte Inglés)</h3>
+        <p>
+            스페인의 대표 백화점 체인으로 화장품 • 패션 • 식품 • 기념품 등 모든 쇼핑을 해결할 수 있다.
+        </p>
+    </article>
+
+</section>
+
+<footer>
+    <p>© 2025 Europe Travel Blog</p>
+</footer>
+
+</body>
+</html>
