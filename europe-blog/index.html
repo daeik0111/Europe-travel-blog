@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>유럽 여행지 추천</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>유럽 여행지 추천</h1>
+
+    <!-- 위에 큰 슬라이드 영역 -->
+    <div class="hero">
+      <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+      <img id="hero-image" src="assets/img/italy.jpg" alt="Country">
+      <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+    </div>
+
+    <!-- 아래 4개 카드 (나라별 입장) -->
+    <h2>나라 선택하기</h2>
+    <div class="cards">
+      <a class="card" href="italy.html">
+        <img src="assets/img/italy.jpg" alt="Italy">
+        <div class="card-title">이탈리아</div>
+      </a>
+      <a class="card" href="spain.html">
+        <img src="assets/img/spain.jpg" alt="Spain">
+        <div class="card-title">스페인</div>
+      </a>
+      <a class="card" href="uk.html">
+        <img src="assets/img/uk.jpg" alt="UK">
+        <div class="card-title">영국</div>
+      </a>
+      <a class="card" href="france.html">
+        <img src="assets/img/france.jpg" alt="France">
+        <div class="card-title">프랑스</div>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const images = [
+  "assets/img/slide1.jpg",
+  "assets/img/slide2.jpg",
+  "assets/img/slide3.jpg",
+  "assets/img/slide4.jpg"
+];
+
+    ;
+    let current = 0;
+    const heroImage = document.getElementById("hero-image");
+
+    function showSlide(index) {
+      current = (index + images.length) % images.length;
+      heroImage.src = images[current];
+    }
+    function prevSlide() { showSlide(current - 1); }
+    function nextSlide() { showSlide(current + 1); }
+  </script>
+
+</body>
+</html>
