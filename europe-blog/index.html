@@ -2,12 +2,14 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>유럽 여행지 추천</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>🛩️유럽 여행지 추천🌍</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
   <div class="container">
-    <h1>유럽 여행지 추천</h1>
+    <h1>🛩️유럽 여행지 추천🌍</h1>
 
     <!-- 위에 큰 슬라이드 영역 -->
     <div class="hero">
@@ -17,23 +19,23 @@
     </div>
 
     <!-- 아래 4개 카드 (나라별 입장) -->
-    <h2>나라 선택하기</h2>
+    <h2>🔸나라 선택🔸</h2>
     <div class="cards">
       <a class="card" href="italy.html">
         <img src="assets/img/italy.jpg" alt="Italy">
-        <div class="card-title">이탈리아</div>
+        <div class="card-title">🕌이탈리아🕌</div>
       </a>
       <a class="card" href="spain.html">
         <img src="assets/img/spain.jpg" alt="Spain">
-        <div class="card-title">스페인</div>
+        <div class="card-title">⛪스페인⛪</div>
       </a>
       <a class="card" href="uk.html">
         <img src="assets/img/uk.jpg" alt="UK">
-        <div class="card-title">영국</div>
+        <div class="card-title">🏰영국🏰</div>
       </a>
       <a class="card" href="france.html">
         <img src="assets/img/france.jpg" alt="France">
-        <div class="card-title">프랑스</div>
+        <div class="card-title">🗼프랑스🗼</div>
       </a>
     </div>
   </div>
@@ -46,17 +48,23 @@
   "assets/img/slide4.jpg"
 ];
 
-    ;
     let current = 0;
-    const heroImage = document.getElementById("hero-image");
+const heroImage = document.getElementById("hero-image");
 
-    function showSlide(index) {
-      current = (index + images.length) % images.length;
-      heroImage.src = images[current];
-    }
-    function prevSlide() { showSlide(current - 1); }
-    function nextSlide() { showSlide(current + 1); }
+function showSlide(index) {
+    current = (index + images.length) % images.length;
+    heroImage.src = images[current];
+}
+function prevSlide() { showSlide(current - 1); }
+function nextSlide() { showSlide(current + 1); }
+
+setInterval(() => nextSlide(), 2000);
   </script>
+
+<footer class="footer">
+    <p>© 2025 Europe Travel Blog · 제작자: 김대익, 이승우, 채성연, 황찬유</p>
+    <p>본 사이트는 오픈소스 홈페이지 프로젝트를 위해 제작되었습니다.</p>
+</footer>
 
 </body>
 </html>

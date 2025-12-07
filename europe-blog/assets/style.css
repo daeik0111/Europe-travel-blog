@@ -7,7 +7,7 @@ body {
 }
 
 
-/* 메인 컨테이너 (가운데 흰 박스) */
+
 .container {
   width: 100%;        /* 전체 화면 폭 사용 */
   max-width: 1600px;  /* 너무 늘어나는 걸 방지하는 최대 폭 */
@@ -19,12 +19,24 @@ body {
 }
 
 
-/* 제목 가운데 정렬 */
+
 h1, h2, h3 {
-  text-align: center;
+    text-align: center;
 }
 
-/* 상단 큰 이미지 슬라이드 영역 */
+
+h1 {
+    font-family: 'Noto Serif KR', cursive;
+    font-size: 52px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+
+
 .hero {
   position: relative;
   height: 400px;
@@ -35,14 +47,14 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
-/* 슬라이드 안의 이미지 */
+
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* 슬라이드 좌우 화살표 */
+
 .hero .arrow {
   position: absolute;
   top: 50%;
@@ -56,7 +68,7 @@ h1, h2, h3 {
 .hero .left { left: 10px; }
 .hero .right { right: 10px; }
 
-/* 아래 나라 카드 4개를 한 줄에 배치 */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4등분 */
@@ -64,7 +76,7 @@ h1, h2, h3 {
   margin-top: 30px;
 }
 
-/* 각 카드 박스 모양 */
+
 .card {
   background: #eee;
   padding: 10px;
@@ -73,20 +85,22 @@ h1, h2, h3 {
   color: #000;
 }
 
-/* 카드 안의 이미지 (작은 썸네일) */
+
 .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-/* 카드 제목 */
+
 .card-title {
-  margin-top: 10px;
-  font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-/* 나라별 페이지에서 쓸 버튼 4개 레이아웃 */
+
+
 .btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -105,9 +119,36 @@ h1, h2, h3 {
   border-radius: 5px;
 }
 
-/* 블로그 글 본문 레이아웃 */
+
 .post {
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+.footer {
+    background-color: #3f2a20;
+    color: #ccc;  
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out; /* 🔥 부드러운 전환 */
+    opacity: 1;
+}
+
+.hero img.fade-out {
+    opacity: 0;
 }
