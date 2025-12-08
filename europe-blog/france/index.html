@@ -2,177 +2,90 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>프랑스 여행 가이드</title>
+  <title>이탈리아 여행</title>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f0ffff;
-      font-family: "Pretendard", sans-serif;
-    }
+  <!-- 공통 스타일 -->
+  <link rel="stylesheet" href="../assets/style.css">
 
-    /* 헤더 */
-    header {
-      text-align: center;
-      padding: 40px 0 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 34px;
-      font-weight: 800;
-      color: #003c46;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #555;
-    }
-
-    /* 네비게이션 */
-    nav {
-      text-align: center;
-      margin: 20px 0 30px;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0 6px;
-      padding: 10px 18px;
-      border-radius: 999px;
-      background: #ffffff;
-      border: 1px solid #c9c9c9;
-      color: #303030;
-      font-size: 15px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      background: #009688;
-      border-color: #009688;
-      color: white;
-    }
-
-    /* 전체 콘텐츠 */
-    .section {
-      width: 90%;
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 30px;
-      border-radius: 14px;
-      background: #ffffff;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .section h2 {
-      margin-bottom: 20px;
-      font-size: 28px;
-      font-weight: 700;
-      color: #00454e;
-      text-align: center;
-    }
-
-    .img-row {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .img-row img {
-      width: 48%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-    }
-
-    .section p {
-      font-size: 15px;
-      line-height: 1.6;
-      color: #333;
-      padding: 0 10px;
-    }
-  </style>
 </head>
 
+
 <body>
+  <div class="container country-page">
 
-  <!-- 상단 영역 -->
-  <header>
-    <h1>🇫🇷 프랑스 여행 가이드</h1>
-    <p>파리부터 남프랑스까지, 주제별로 프랑스를 둘러보세요.</p>
-  </header>
+    <!-- 위쪽 : 나라 이름 -->
+   <header class="country-header">
+  <h1>✨ Italy ✨</h1>
 
-  <!-- 네비 -->
-  <nav>
-    <a href="#places">관광지</a>
-    <a href="#food">맛집</a>
-    <a href="#shopping">쇼핑</a>
-    <a href="#culture">문화 / 역사</a>
-  </nav>
+  <!-- 이탈리아 상단 슬라이드 -->
+  <div class="country-hero">
+    <img id="italy-hero" src="../assets/img/italy_place1.jpg" alt="이탈리아 풍경">
+  </div>
+</header>
 
-  <!-- 관광지 -->
-  <section id="places" class="section">
-    <h2>프랑스 관광지</h2>
 
-    <div class="img-row">
-      <img src="assets/img/france/eiffel_day.jpg" alt="에펠탑">
-      <img src="assets/img/france/eiffel_night.jpg" alt="에펠탑 야경">
+    <!-- 가운데 : 왼쪽(nav) + 오른쪽(내용) -->
+    <div class="country-layout">
+
+      <!-- 왼쪽 : 다른 나라들 목록 -->
+      <nav class="country-nav">
+        <h3>country</h3>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li class="active"><a href="index.html">이탈리아</a></li>
+          <li><a href="../spain/index.html">스페인</a></li>
+          <li><a href="../uk/index.html">영국</a></li>
+          <li><a href="../france/index.html">프랑스</a></li>
+        </ul>
+      </nav>
+
+      <!-- 오른쪽 : 네 개 항목 버튼 -->
+      <section class="country-main">
+        <h2>이탈리아 여행 어디로 갈까?</h2>
+
+         <div class="btns">
+          <a href="places/index.html" class="btn-link">관광지🌆</a>
+          <a href="food/index.html" class="btn-link">맛집🍲</a>
+          <a href="shopping/index.html" class="btn-link">쇼핑💸</a>
+          <a href="culture/index.html" class="btn-link">문화 / 역사📜</a>
+        </div>
+      </section>
     </div>
 
-    <p>
-      프랑스의 상징 에펠탑은 낮의 활기찬 풍경과 밤의 로맨틱한 분위기를 모두 즐길 수 있는 대표 명소다.
-      파리 전경을 감상하기 좋은 탑 꼭대기와 시민들의 여유를 느낄 수 있는 센 강변 산책도 함께 즐길 수 있다.
-    </p>
-  </section>
+    <!-- 아래 : footer (이미 있으면 그대로 써도 됨) -->
+    <footer class="footer">
+      <p>© 2025 Europe Travel Blog · 제작자: 2025051303 채성연</p>
+    </footer>
+  </div>
 
-  <!-- 맛집 -->
-  <section id="food" class="section">
-    <h2>프랑스 맛집</h2>
+  <script>
+  const italyImages = [
+    "../assets/img/italy_place1.jpg",
+    "../assets/img/italy_place2.jpg",
+    "../assets/img/italy_place3.jpg"
+  ];
 
-    <div class="img-row">
-      <img src="assets/img/france/food_croissant.jpg" alt="크루아상">
-      <img src="assets/img/france/food_snail.jpg" alt="에스카르고">
-    </div>
+  let italyCurrent = 0;
+  const italyHero = document.getElementById("italy-hero");
 
-    <p>
-      프랑스는 미식의 나라답게 빵, 와인, 커피부터 고급 요리까지 다양한 미식 경험을 제공한다.
-      특히 파리의 크루아상과 전통 요리 에스카르고는 여행객들이 꼭 맛보는 인기 메뉴다.
-    </p>
-  </section>
+  function changeItalySlide() {
+    // 페이드아웃
+    italyHero.classList.add("fade-out");
 
-  <!-- 쇼핑 -->
-  <section id="shopping" class="section">
-    <h2>프랑스 쇼핑</h2>
+    setTimeout(() => {
+      italyCurrent = (italyCurrent + 1) % italyImages.length;
+      italyHero.src = italyImages[italyCurrent];
 
-    <div class="img-row">
-      <img src="assets/img/france/paris_shop1.jpg" alt="파리 쇼핑가">
-      <img src="assets/img/france/paris_shop2.jpg" alt="명품 거리">
-    </div>
+      // 다시 나타나기
+      italyHero.classList.remove("fade-out");
+    }, 400); // 0.4초 후 사진 교체
+  }
 
-    <p>
-      샹젤리제 거리와 갤러리 라파예트는 프랑스 쇼핑의 중심지다. 패션, 향수, 명품 브랜드를 현지에서
-      구매할 수 있어 여행의 또 다른 즐거움을 제공한다.
-    </p>
-  </section>
-
-  <!-- 문화 -->
-  <section id="culture" class="section">
-    <h2>프랑스 문화 / 역사</h2>
-
-    <div class="img-row">
-      <img src="assets/img/france/louvre.jpg" alt="루브르 박물관">
-      <img src="assets/img/france/notre_dame.jpg" alt="노트르담 대성당">
-    </div>
-
-    <p>
-      프랑스는 유럽 문화의 중심지로, 루브르 박물관과 노트르담 대성당 같은 역사적 명소가 풍부하다.
-      예술과 건축을 사랑하는 여행자에게 최고의 감동을 선사하는 나라다.
-    </p>
-  </section>
+  // 3초마다 자동으로 다음 사진으로 변경
+  setInterval(changeItalySlide, 1500);
+</script>
+</body>
+</html>
 
 </body>
 </html>
