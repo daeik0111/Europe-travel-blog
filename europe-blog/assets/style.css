@@ -259,3 +259,57 @@ h2 {
 .country-hero img.fade-out {
   opacity: 0;
 }
+
+.country-main h2 {
+    color: #6B4F4F;   /* 진한 회색 — 어떤 배경에도 잘 보임 */
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 서브 페이지 상단 헤더 */
+.sub-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 서브 내비게이션 (HOME / 관광지 / 맛집 / 쇼핑 / 문화역사) */
+.sub-nav ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+}
+
+.sub-nav li a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* 현재 페이지 표시 */
+.sub-nav li.active a {
+    background-color: #5c3d2e;  /* 지금 쓰는 갈색 */
+    color: #fff;
+}
+
+/* 블로그 본문 */
+.post {
+    max-width: 800px;
+    margin: 30px auto 60px;
+    line-height: 1.7;
+}
+
+.post h2 {
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
