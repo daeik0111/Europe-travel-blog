@@ -152,3 +152,110 @@ h2 {
 .hero img.fade-out {
     opacity: 0;
 }
+
+/* === 나라별 상세 페이지 레이아웃 === */
+
+.country-page {
+  padding: 20px;
+}
+
+/* 위쪽 나라 제목 */
+.country-header h1 {
+  margin-bottom: 5px;
+}
+.country-hero {
+  margin-top: 10px;
+}
+
+/* 왼쪽 nav + 오른쪽 내용 */
+.country-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;  /* 왼쪽 220px, 오른쪽은 나머지 */
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* 왼쪽 나라 목록(nav) */
+.country-nav {
+  background-color: #f3e1c2;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.country-nav h3 {
+  margin-bottom: 10px;
+}
+
+.country-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.country-nav li {
+  margin-bottom: 8px;
+}
+
+.country-nav a {
+  text-decoration: none;
+  color: #5c3d2e;
+}
+
+.country-nav li.active a {
+  font-weight: bold;
+}
+
+/* 오른쪽 큰 영역 */
+.country-main {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.country-main h2 {
+  margin-bottom: 20px;
+}
+
+/* 네 개 버튼 (관광지, 맛집, 쇼핑, 문화/역사) */
+.btns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.btn-link {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  background-color: #eee;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn-link:hover {
+  background-color: #e0cbb0;
+}
+
+/* === 나라 페이지 상단 슬라이드 === */
+
+.country-hero {
+  margin-top: 30px;
+  height: 430px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.country-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+}
+
+.country-hero img.fade-out {
+  opacity: 0;
+}
