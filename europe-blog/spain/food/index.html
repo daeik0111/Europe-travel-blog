@@ -1,49 +1,234 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>스페인 맛집</title>
-    <link rel="stylesheet" href="../../assets/style.css">
+  <meta charset="UTF-8">
+  <title>스페인인 맛집</title>
+
+
+  <!-- 이 페이지 전용 스타일 -->
+  <style>
+    body {
+      margin: 0;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+        "Malgun Gothic", sans-serif;
+      background: #f5ffff;          /* 연한 민트색 배경 */
+    }
+
+    /* 상단 영역 전체 */
+    .blog-header {
+      padding: 24px 0 16px;
+      text-align: center;
+    }
+
+    /* 상단 버튼 줄 */
+    .blog-nav {
+      margin-bottom: 18px;
+    }
+
+    .blog-nav a {
+      display: inline-block;
+      margin: 0 4px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid #dcdcdc;
+      background: #ffffff;
+      font-size: 13px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .blog-nav a:hover {
+      background: #333;
+      color: #fff;
+      border-color: #333;
+    }
+
+    .blog-nav a.active {
+      background: #009688;   /* 현재 페이지 버튼 색 */
+      color: #fff;
+      border-color: #009688;
+    }
+
+    .blog-main-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* 가운데 흰색 카드(블로그 본문) */
+    .blog-wrapper {
+      max-width: 900px;
+      margin: 24px auto 80px;
+      padding: 32px 40px 60px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      line-height: 1.8;
+    }
+
+    .post-category {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .post-title {
+      font-size: 24px;
+      margin: 0 0 8px;
+    }
+
+    .post-meta {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 24px;
+    }
+
+    .post-image-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .post-image-row img {
+      width: 50%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .post h2 {
+      font-size: 18px;
+      margin: 26px 0 8px;
+    }
+
+    .post ul {
+      padding-left: 20px;
+      margin: 0 0 12px;
+    }
+
+    .post li {
+      margin-bottom: 4px;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- 상단: 버튼 + 큰 제목 -->
+  <header class="blog-header">
+    <nav class="blog-nav">
+    <a href="../../index.html">HOME</a>
+    <a href="../places/index.html">관광지</a>
+    <a href="../food/index.html" class="active">맛집</a>
+    <a href="../shopping/index.html">쇼핑</a>
+    <a href="../culture/index.html">문화 / 역사</a>
+</nav>
 
-<header>
-    <h1>🍽 스페인 맛집 추천</h1>
-    <p>스페인에서 꼭 먹어야 할 전통 음식과 유명 레스토랑을 정리했습니다.</p>
-</header>
+    <h1 class="blog-main-title">🏛️스페인 여행🏛️</h1>
+  </header>
 
-<section class="category-section">
-    <h2>대표 음식 & 맛집</h2>
+  <!-- 가운데 흰색 카드 안에 블로그 글 -->
+  <main class="blog-wrapper">
+     <article class="post">
+      <div class="post-category">맛집</div>
+      <h2 class="post-title">스페인 필수 코스!</h2>
+      <div class="post-meta">작성자 : 김대익 · 2025. 12. 12</div>
 
-    <article class="category-card">
-        <h3>1. 빠에야 (Paella)</h3>
-        <p>
-            발렌시아 지역의 대표적인 쌀 요리로 해산물, 닭고기, 채소 등 다양한 재료를 넣어 만든다.
-            바르셀로나의 <b>7 Portes</b>가 빠에야 맛집으로 유명하다.
-        </p>
-    </article>
+      <p>
+  스페인 여행뿐만 아니라 어딜가나 빼먹을 수 없는게 바로 음식!<br>
+  오늘은 수많은 음식들 중에서 <strong>“이거 먹었으니 스페인 여행은 다 한거다.” </strong>라는 생각이 들 정도의 음식 세 가지를 소개해볼게요.<br>
+  그럼 함께 가보시죠?
+</p>
 
-    <article class="category-card">
-        <h3>2. 하몽 이베리코 (Jamón Ibérico)</h3>
-        <p>
-            스페인의 전통 건조 햄으로 진한 풍미가 특징이다.
-            마드리드의 <b>Museo del Jamón</b>에서 합리적인 가격으로 다양한 하몽을 맛볼 수 있다.
-        </p>
-    </article>
+  <!-- 1. 비스테카 알라 피오렌티나 -->
+  <h3>첫 번째로 소개할 음식은… 스페인의 상징, 사프란 향 가득한 빠에야!
+</h3>
 
-    <article class="category-card">
-        <h3>3. 타파스 (Tapas)</h3>
-        <p>
-            스페인의 대표적인 안주 요리로 감바스, 감자튀김 브라바스 등이 있다.
-            세비야의 <b>El Rinconcillo</b>는 1670년부터 운영된 스페인 가장 오래된 타파스 바이다.
-        </p>
-    </article>
+  <p>
+    스페인의 대표 요리 중 하나인 유명한 <strong>쌀밥 요리 빠에야야</strong><br>
+    지은 밥을 가지고 기름에 볶는 과정은 전혀 없고<br>
+    철판밥이나 돌솥밥처럼 생쌀을 넣고 볶은 재료와 육수를 넣어 끓여서 짓는 음식.<br>
+    “아… 이 맛 때문에 스페인 왔다”라는 말이 저절로 나오게 될겁니다.
+  </p>
 
-</section>
+  <!-- 비스테카 사진 2장 -->
+  <div class="post-image-row">
+    <img src="../../assets/img/먹물 빠에야.jpg" alt="먹물 빠에야">
+    <img src="../../assets/img/랍스터 빠에야.jpg" alt="랍스터 빠에야">
+  </div>
 
-<footer>
-    <p>© 2025 Europe Travel Blog</p>
-</footer>
+  <ul>
+    <li>식탁에 커다란 팬이 올려지는 순간, 코끝을 자극하는 <strong>노란 시프한 향</strong></li>
+    <li>해산물이나 고기가 아낌없이 올라간 모습과 바닥에 살짝 눌어붙은 <strong>소카라트</strong></li>
+    <li>고소함과 바삭함이 동시에 터져 나오며 입안에서 완성!!</li>
+  </ul>
 
+  <h4>✔ 추천 맛집 두 곳</h4>
+  <ul>
+    <li>
+      <strong>El Glop</strong> – 한국인들에게 유명하며 가성비가 좋고
+      먹물 빠에야가 유명한 맛집
+    </li>
+    <li>
+      <strong>La Paella</strong> – 식당 곳곳에 붙어있는 그림들로 채워진 분위기, 
+      랍스터 빠에야가 인기 있는 스페인 요리 전문 레스토랑
+    </li>
+  </ul>
+
+  <p>
+    스페인의 대표 요리인, 쌀밥 요리 <strong>빠에야</strong>를 드실 분을 위한 추천 맛집부터 <br>
+    맛집 탐밤을 하고 싶은 분들을 위한 추천 맛집까지
+  </p>
+
+  <!-- 2. 오소부코 & 리소토 -->
+  <h3>두 번째로 소개할 음식은… 부드러움의 끝을 보여주는 갈리시아식 문어요리, 뿔뽀!</h3>
+
+  <p>
+    문어를 좋아하는 사람은 넘어갈 수 없는 요리!<br>
+    스페인 갈리시아 지방의 문어 요리인<strong>뿔뽀</strong>는 스페인어로 문어를 뜻한다고 해요.<br>
+    통문어를 그대로 삶아서 조리하는 방식으로
+    올리브유는 물론 식초를 뿌려도 좋으며 주로 타파스와 함께 안주 요리로 즐겨먹는답니다
+  </p>
+
+  <!-- 오소부코 & 리소토 사진 2장 -->
+  <div class="post-image-row">
+    <img src="../../assets/img/risotto1.jpg" alt="밀라노식 리소토">
+    <img src="../../assets/img/risotto2.jpg" alt="오소부코와 리소토 조합">
+  </div>
+
+  <ul>
+    <li>사프란 특유의 향 덕분에 깊고 고급스러운 풍미 🌼</li>
+    <li>오소부코는 살이 부들부들해서 숟가락으로도 잘 떠짐 😭</li>
+    <li>
+      <strong>리소토 + 오소부코 조합</strong>은
+      “밀라노 현지 맛 그대로”를 느낄 수 있는 완벽한 한 접시
+    </li>
+  </ul>
+
+  <h4>✔ 추천 맛집 두 곳</h4>
+  <ul>
+    <li>
+      <strong>Galleria Restaurant</strong> – 두오모 옆 갤러리아 내부에 있어
+      뷰까지 완벽한 곳
+    </li>
+    <li>
+      <strong>Trattoria Milanese</strong> – 전통 방식 그대로 만드는
+      정통 밀라노식 맛집
+    </li>
+  </ul>
+
+  <p>
+    밀라노에서는 이 두 메뉴를 먹어보면 여행의 질이 한 단계 올라가는 느낌이 들어요.
+  </p>
+
+<br>
+  <p>
+    피렌체의 육즙 폭발 스테이크부터, 밀라노의 향긋한 리소토까지…🥰 <br> 
+    이 두 메뉴만 먹어도 이탈리아가 왜 <strong>“미식 천국”</strong>이라는 말이 나오는지
+    바로 이해될 거예요!
+  </p>
+</article>
+
+
+  </main>
 </body>
 </html>
