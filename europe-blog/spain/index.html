@@ -1,46 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Spain - Europe Travel Blog</title>
+  <meta charset="UTF-8">
+  <title>스페인 여행</title>
+
+  <!-- 공통 스타일 -->
   <link rel="stylesheet" href="../assets/style.css">
+
 </head>
+
+
 <body>
-  <header class="header">
-    <div class="wrap">
-      <div class="logo">🌍 Europe Travel Blog</div>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="places/index.html">Places</a></li>
-          <li><a href="food/index.html">Food</a></li>
-          <li><a href="shopping/index.html">Shopping</a></li>
-          <li><a href="culture/index.html">Culture</a></li>
+  <div class="container country-page">
+
+    <!-- 위쪽 : 나라 이름 -->
+   <header class="country-header">
+  <h1>✨ SPAIN ✨</h1>
+
+  <!-- 스페인 상단 슬라이드 -->
+  <div class="country-hero">
+    <img id="spain-hero" src="../assets/img/spain_place1.jpg" alt="이탈리아 풍경">
+  </div>
+</header>
+
+
+    <!-- 가운데 : 왼쪽(nav) + 오른쪽(내용) -->
+    <div class="country-layout">
+
+      <!-- 왼쪽 : 다른 나라들 목록 -->
+      <nav class="country-nav">
+        <h3>country</h3>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../italy/index.html">이탈리아</a></li>
+          <li class="active"><a href="index.html">스페인</a></li>
+          <li><a href="../uk/index.html">영국</a></li>
+          <li><a href="../france/index.html">프랑스</a></li>
         </ul>
       </nav>
+
+      <!-- 오른쪽 : 네 개 항목 버튼 -->
+      <section class="country-main">
+        <h2>스페인 여행 어디로 갈까?</h2>
+
+         <div class="btns">
+          <a href="places/index.html" class="btn-link">관광지🌆</a>
+          <a href="food/index.html" class="btn-link">맛집🍲</a>
+          <a href="shopping/index.html" class="btn-link">쇼핑💸</a>
+          <a href="culture/index.html" class="btn-link">문화 / 역사📜</a>
+        </div>
+      </section>
     </div>
-  </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <h1>Spain</h1>
-      <p>스페인의 주요 도시와 여행 포인트를 소개합니다. (관광지 · 맛집 · 쇼핑 · 문화·역사)</p>
-    </section>
+    <!-- 아래 : footer (이미 있으면 그대로 써도 됨) -->
+    <footer class="footer">
+      <p>© 2025 Europe Travel Blog · 제작자: 2025001412 김대익</p>
+    </footer>
+  </div>
 
-    <section>
-      <h2>빠른 링크</h2>
-      <div class="card-grid">
-        <a class="card" href="places/index.html"><strong>관광지</strong><div>사그라다 파밀리아·알함브라 등</div></a>
-        <a class="card" href="food/index.html"><strong>맛집</strong><div>타파스·파에야 추천</div></a>
-        <a class="card" href="shopping/index.html"><strong>쇼핑</strong><div>그란비아·보른 지역</div></a>
-        <a class="card" href="culture/index.html"><strong>문화·역사</strong><div>무어인의 흔적·플라멩코</div></a>
-      </div>
-    </section>
-  </main>
+  <script>
+  const spainImages = [
+    "../assets/img/spain1.jpg",
+    "../assets/img/spain2.jpg",
+    "../assets/img/spain3.jpg"
+  ];
 
-  <footer>
-    <div class="wrap">&copy; 2025 Europe Travel Blog</div>
-  </footer>
+  let spainCurrent = 0;
+  const spainHero = document.getElementById("spain-hero");
+
+  function changeSPAINSlide() {
+    // 페이드아웃
+    spainHero.classList.add("fade-out");
+
+    setTimeout(() => {
+      spainCurrent = (spainCurrent + 1) % spainImages.length;
+      spainHero.src = spainImages[spainCurrent];
+
+      // 다시 나타나기
+      spainHero.classList.remove("fade-out");
+    }, 400); // 0.4초 후 사진 교체
+  }
+
+  // 3초마다 자동으로 다음 사진으로 변경
+  setInterval(changeSPAINSlide, 1500);
+</script>
+</body>
+</html>
+
 </body>
 </html>
