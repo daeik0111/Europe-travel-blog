@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>프랑스 맛집</title>
+
+
+  <!-- 이 페이지 전용 스타일 -->
+  <style>
+    body {
+      margin: 0;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+        "Malgun Gothic", sans-serif;
+      background: #f5ffff;          /* 연한 민트색 배경 */
+    }
+
+    /* 상단 영역 전체 */
+    .blog-header {
+      padding: 24px 0 16px;
+      text-align: center;
+    }
+
+    /* 상단 버튼 줄 */
+    .blog-nav {
+      margin-bottom: 18px;
+    }
+
+    .blog-nav a {
+      display: inline-block;
+      margin: 0 4px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid #dcdcdc;
+      background: #ffffff;
+      font-size: 13px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .blog-nav a:hover {
+      background: #333;
+      color: #fff;
+      border-color: #333;
+    }
+
+    .blog-nav a.active {
+      background: #009688;   /* 현재 페이지 버튼 색 */
+      color: #fff;
+      border-color: #009688;
+    }
+
+    .blog-main-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* 가운데 흰색 카드(블로그 본문) */
+    .blog-wrapper {
+      max-width: 900px;
+      margin: 24px auto 80px;
+      padding: 32px 40px 60px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      line-height: 1.8;
+    }
+
+    .post-category {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .post-title {
+      font-size: 24px;
+      margin: 0 0 8px;
+    }
+
+    .post-meta {
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 24px;
+    }
+
+    .post-image-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .post-image-row img {
+      width: 50%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .post h2 {
+      font-size: 18px;
+      margin: 26px 0 8px;
+    }
+
+    .post ul {
+      padding-left: 20px;
+      margin: 0 0 12px;
+    }
+
+    .post li {
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 상단: 버튼 + 큰 제목 -->
+  <header class="blog-header">
+    <nav class="blog-nav">
+    <a href="../../index.html">HOME</a>
+    <a href="../places/index.html">관광지</a>
+    <a href="../food/index.html" class="active">맛집</a>
+    <a href="../shopping/index.html">쇼핑</a>
+    <a href="../culture/index.html">문화 / 역사</a>
+</nav>
+
+    <h1 class="blog-main-title">프랑스 여행</h1>
+  </header>
+
+  <!-- 가운데 흰색 카드 안에 블로그 글 -->
+  <main class="blog-wrapper">
+     <article class="post">
+      <div class="post-category">맛집</div>
+      <h2 class="post-title">프랑스 필수 코스!</h2>
+      <div class="post-meta">작성자 : 채성연 · 2025. 12. 12</div>
+
+      <p>
+  프랑스를 여행하다 보면 “아, 이 맛 때문에 다시 오고 싶다…” 싶은 순간이 정말 많다고 합니다.🍴<br>
+  오늘은 그중에서도 <strong>“여기서 이 맛집은 꼭 가봐야한다!” </strong>싶은 곳을 세가지정도 소개해볼게요.<br>
+  그럼 맛있는 이야기 시작해볼까요?
+</p>
+
+  <!-- 1. 비스테카 알라 피오렌티나 -->
+  <h3>첫 번째로 소개할 곳은… 파리의 전통 맛을 담은 브라세리, ‘레옹(Léon)’
+</h3>
+
+  <p>
+    프랑스에서 파리 요리를 제대로 맛보고 싶다면 꼭 들러야 할 곳이 바로 전통 브라세리예요.<br>
+    그중에서도 레옹은 관광객뿐만 아니라 파리 현지인에게도 사랑받는 유명 레스토랑으로,
+    오래된 파리의 감성을 그대로 간직하고 있죠.
+  </p>
+
+  <!-- 비스테카 사진 2장 -->
+  <div class="post-image-row">
+    <img src="../../assets/img/steak1.jpg" alt="비스테카 알라 피오렌티나 스테이크">
+    <img src="../../assets/img/steak2.jpg" alt="비스테카 알라 피오렌티나와 와인">
+  </div>
+
+  <ul>
+    <li>“크림이 찰떡처럼 어우러진 홍합 요리(뮬 프리츠)”</li>
+    <li>“버터 향이 입안에서 폭발하는 에스카르고”</li>
+    <li>“겉은 바삭 속은 촉촉한 스테이크 프리츠,갓 구운 바게트와 따끈한 프렌치 어니언 수프”</li>
+  </ul>
+
+  <h4>✔ 추천 맛집 두 곳</h4>
+  <ul>
+    <li>
+      <strong>Trattoria ZaZa</strong> – 분위기도 좋고 음식도 맛있어서
+      항상 줄 서 있는 인기 맛집
+    </li>
+    <li>
+      <strong>La Giostra</strong> – 로맨틱하고 감성 있는 분위기,
+      데이트 코스로도 완전 찰떡!
+    </li>
+  </ul>
+
+  <p>
+    피렌체에서 고기 먹을 거면 이 두 곳은 진짜 강추예요. <br>
+    “오늘은 스테이크로 제대로 한 끼!” 하고 싶을 때 꼭 가보세요.🥹
+  </p>
+
+  <!-- 2. 오소부코 & 리소토 -->
+  <h3>두 번째 맛은… 밀라노의 오소부코 & 밀라노식 리소토!🍛</h3>
+
+  <p>
+    두 번째로 소개할 맛은 <strong>밀라노의 대표 메뉴 조합</strong>이에요.<br>
+    샤프란 향이 은은하게 올라오는 노란 리소토와
+    부드럽게 뭉개지는 오소부코(송아지 정강이 스튜)의 조합은 정말 완벽해요… 🤤
+  </p>
+
+  <!-- 오소부코 & 리소토 사진 2장 -->
+  <div class="post-image-row">
+    <img src="../../assets/img/risotto1.jpg" alt="밀라노식 리소토">
+    <img src="../../assets/img/risotto2.jpg" alt="오소부코와 리소토 조합">
+  </div>
+
+  <ul>
+    <li>사프란 특유의 향 덕분에 깊고 고급스러운 풍미 🌼</li>
+    <li>오소부코는 살이 부들부들해서 숟가락으로도 잘 떠짐 😭</li>
+    <li>
+      <strong>리소토 + 오소부코 조합</strong>은
+      “밀라노 현지 맛 그대로”를 느낄 수 있는 완벽한 한 접시
+    </li>
+  </ul>
+
+  <h4>✔ 추천 맛집 두 곳</h4>
+  <ul>
+    <li>
+      <strong>Galleria Restaurant</strong> – 두오모 옆 갤러리아 내부에 있어
+      뷰까지 완벽한 곳
+    </li>
+    <li>
+      <strong>Trattoria Milanese</strong> – 전통 방식 그대로 만드는
+      정통 밀라노식 맛집
+    </li>
+  </ul>
+
+  <p>
+    밀라노에서는 이 두 메뉴를 먹어보면 여행의 질이 한 단계 올라가는 느낌이 들어요.
+  </p>
+
+<br>
+  <p>
+    피렌체의 육즙 폭발 스테이크부터, 밀라노의 향긋한 리소토까지…🥰 <br> 
+    이 두 메뉴만 먹어도 이탈리아가 왜 <strong>“미식 천국”</strong>이라는 말이 나오는지
+    바로 이해될 거예요!
+  </p>
+</article>
+
+
+  </main>
+</body>
+</html>
 
